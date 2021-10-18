@@ -27,13 +27,15 @@ export default {
     h1 {
         text-align: center;
         color: black;
-        line-height: 100%;
-        font-size: 150%;
+        line-height: 200%;
+        font-size: 140%;
         font-family: sans-serif;
     }
     h3 {
+        margin-left: 5px;
         color: black;
         font-size: 100%;
+        line-height: 200%;
         font-family: sans-serif;
     }
     .card {

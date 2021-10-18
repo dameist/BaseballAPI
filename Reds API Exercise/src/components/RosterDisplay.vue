@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class = "whole">
     <div class="header">
          <div class="nav">
             <router-link v-bind:to="{ name: 'home' }"><button>Home</button></router-link>
@@ -60,6 +60,9 @@ export default {
 }
 </script>
 <style scoped>
+.header {
+    width: 100vw;
+}
 button {
     margin-left: 92%;
 }

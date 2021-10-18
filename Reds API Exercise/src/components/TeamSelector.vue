@@ -8,8 +8,14 @@
         </select>
         <br>
         <br>
-        <div><button class ="search" @click.prevent="submit" type ="button">Click for Roster</button></div>
-        
+        <br>
+        <a href="#" class="cta">
+  <span @click.prevent="submit">Select Roster</span>
+  <svg width="13px" height="10px" viewBox="0 0 13 10">
+    <path d="M1,5 L11,5"></path>
+    <polyline points="8 1 12 5 8 9"></polyline>
+  </svg>
+</a>
     </div>
 </template>
 
@@ -45,8 +51,17 @@ export default {
     },
     methods: {
         submit(){
-            this.$router.push(`/team/${this.search}`)
+            if(this.search != ""){
+                this.$router.push(`/team/${this.search}`)
+            }
+            
         }
     }
 };
 </script>
+<style >
+select{
+    font-size:22px;
+    font-family: sans-serif;
+}
+</style>
